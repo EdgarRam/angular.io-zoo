@@ -9,7 +9,7 @@ import {
 })
 
 export class HomeComponent implements OnInit {
-  title = 'Home';
+  title = 'Bienvenido a Ngzoo';
 
 
   ngOnInit(){

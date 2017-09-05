@@ -3,14 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 
-//Components
-import { TiendaComponent } from '../components/tienda/tienda';
-import { ParquesComponent } from '../components/parques/parques';
-
-import { AnimalsComponent } from '../components/animals/animals';
-import { ContactComponent } from '../components/contact/contact';
-import { HomeComponent } from '../components/home/home';
-import { KeepersComponent } from '../components/keepers/keepers';
+//view Components
+import { TiendaComponent } from '../viewComponents/tienda/tienda';
+import { ParquesComponent } from '../viewComponents/parques/parques';
+import { AnimalsComponent } from '../viewComponents/animals/animals';
+import { ContactComponent } from '../viewComponents/contact/contact';
+import { HomeComponent } from '../viewComponents/home/home';
+import { KeepersComponent } from '../viewComponents/keepers/keepers';
 
 const appRoutes: Routes  = [
     {
