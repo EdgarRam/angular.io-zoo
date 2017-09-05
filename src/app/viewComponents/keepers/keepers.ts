@@ -5,7 +5,7 @@ import {
 
 @Component({
   selector: 'keepers',
-  templateUrl: './keepers.html',
+  templateUrl: './keepers.pug',
 })
 
 export class KeepersComponent implements OnInit {

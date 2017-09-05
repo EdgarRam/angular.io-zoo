@@ -5,7 +5,7 @@ import {
 
 @Component({
   selector: 'home',
-  templateUrl: './home.html',
+  templateUrl: './home.pug',
 })
 
 export class HomeComponent implements OnInit {

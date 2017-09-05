@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 //view Components
 import { TiendaComponent } from '../viewComponents/tienda/tienda';
-import { ParquesComponent } from '../viewComponents/parques/parques';
 import { AnimalsComponent } from '../viewComponents/animals/animals';
 import { ContactComponent } from '../viewComponents/contact/contact';
 import { HomeComponent } from '../viewComponents/home/home';

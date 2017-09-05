@@ -1,0 +1,14 @@
+include ../../../mixins/views/button
+
++button()
+
+h2 {{name}}
+
+ol
+    li Metros: {{meters}}
+    li Vegetación: {{vegetation}}
+    li {{ open ? 'Abierto' : 'Cerrado '}}
+
+
+
+button( (click)="emitEvent($event)" ) Mostrar en el padre

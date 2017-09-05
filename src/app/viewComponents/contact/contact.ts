@@ -5,7 +5,7 @@ import {
 
 @Component({
   selector: 'contact',
-  templateUrl: './contact.html',
+  templateUrl: './contact.pug',
 })
 
 export class ContactComponent implements OnInit {

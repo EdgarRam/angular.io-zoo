@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+div.navigation.col-lg-12
+    nav.navbar.navbar-default
+        div.container-fluid
+            div.navbar-header
+                a.navbar-brand( [routerLink]="['/home']") {{title}}!!
+
+            ul.nav.navbar-nav
+                li
+                    a( [routerLink]="['/home']" [routerLinkActive]="['active']" )
+                        span.glyphicon.glyphicon-home
+                        | Inicio
+
+                li
+                    a( [routerLink]="['/animals']" [routerLinkActive]="['active']" )
+                        span.glyphicon.glyphicon-star
+                        | Animales
+
+                li
+                    a( [routerLink]="['/keepers']" [routerLinkActive]="['active']" )
+                        span.glyphicon.glyphicon-user
+                        | Cuidadores
+
+                li
+                    a( [routerLink]="['/store']" [routerLinkActive]="['active']" )
+                        span.glyphicon.glyphicon-gift
+                        | Tienda
+
+                li
+                    a( [routerLink]="['/contact']" [routerLinkActive]="['active']" )
+                        span.glyphicon.glyphicon-comment
+                        | Contacto
+
+
+
+
+div.col-lg-11
+    router-outlet

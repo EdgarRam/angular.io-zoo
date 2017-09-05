@@ -12,7 +12,7 @@ import {
 
 @Component({
     selector:'parques',
-    templateUrl: './parques.html',
+    templateUrl: './parques.pug',
     styleUrls: [
         './parques.css'
     ]
