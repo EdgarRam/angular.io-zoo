@@ -1,3 +1,4 @@
+//Declaracion de componentes
 // view Components
 import { AppComponent } from './viewComponents/appComponent/app.component';
 import { TiendaComponent } from './viewComponents/tienda/tienda';

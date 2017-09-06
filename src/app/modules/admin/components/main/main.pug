@@ -1,0 +1,13 @@
+div.col-lg-4
+    h3 {{title}}
+
+    div.sidebar-admin
+        ul.nav.nav-pills.nav-stacked
+            li( role="presentation" [routerLinkActive]="['active']" )
+                a( [routerLink]="['list']" ) Listado
+            li( role="presentation" [routerLinkActive]="['active']" )
+                a( [routerLink]="['create']" ) Crear
+            li( role="presentation" [routerLinkActive]="['active']")
+                a( [routerLink]="['edit']" ) Editar
+div.col-lg-8
+    router-outlet

@@ -1,0 +1,23 @@
+div.col-lg-12
+    h3 {{title}}
+
+    table.table.table-hover
+        thead.thead-default
+            tr
+                th Nombre
+                th Año
+                th Acciones
+        tbody
+            tr( *ngFor="let n of [1,2,2,2,2,2,2,2]; let i = index" )
+                td Oso panda {{ i }}
+                td 2012
+                td
+                    button.btn.btn-sm.btn-success
+                        span.glyphicon.glyphicon-eye-open
+                        | Ver
+                    button.btn.btn-sm.btn-primary
+                        span.glyphicon.glyphicon-pencil
+                        | Editar
+                    button.btn.btn-sm.btn-primary
+                        span.glyphicon.glyphicon-trash
+                        | Borrar
