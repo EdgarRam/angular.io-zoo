@@ -16,7 +16,9 @@
 }
 
 
-.navbar-nav .active{
+.navbar-nav .active,
+.navbar-nav > li:hover a{
+    transition: 300ms;
     border-bottom: 3px solid orange;
     color: orange !important;
 }

@@ -2,6 +2,8 @@
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing } from './routing/appRouting';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 //importar nuevo modulo
 import { ModuleEmailModule } from './modules/email/moduleemail.module';
@@ -13,7 +15,8 @@ const imports=[
     BrowserModule,
     routing,
     ModuleEmailModule,
-    AdminModule
+    AdminModule,
+    BrowserAnimationsModule
 ]
 
 

@@ -3,9 +3,12 @@ import {
     OnInit
 } from '@angular/core';
 
+import { fadeIn } from '../../components/animations/animations'
+
 @Component({
-  selector: 'home',
-  templateUrl: './home.pug',
+    selector: 'home',
+    templateUrl: './home.pug',
+    animations: [fadeIn]
 })
 
 export class HomeComponent implements OnInit {

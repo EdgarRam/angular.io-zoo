@@ -3,9 +3,13 @@ import {
     OnInit
 } from '@angular/core';
 
+import { fadeIn } from '../../components/animations/animations'
+
+
 @Component({
-  selector: 'animals',
-  templateUrl: './animals.pug',
+    selector: 'animals',
+    templateUrl: './animals.pug',
+    animations:[fadeIn]
 })
 
 export class AnimalsComponent implements OnInit {
