@@ -6,6 +6,8 @@ import { AnimalsComponent } from './viewComponents/animals/animals';
 import { ContactComponent } from './viewComponents/contact/contact';
 import { HomeComponent } from './viewComponents/home/home';
 import { KeepersComponent } from './viewComponents/keepers/keepers';
+import { RegisterComponent } from './viewComponents/register/register';
+import { LoginComponent } from './viewComponents/login/login';
 // view Components
 
 
@@ -23,7 +25,9 @@ const declarations=[
     ContactComponent,
     HomeComponent,
     KeepersComponent,
-    SimpleTinyComponent
+    SimpleTinyComponent,
+    RegisterComponent,
+    LoginComponent
 ]
 
 

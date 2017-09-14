@@ -1,5 +1,6 @@
 //Decalración de modulos
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing } from './routing/appRouting';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,7 +17,8 @@ const imports=[
     routing,
     ModuleEmailModule,
     AdminModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpModule
 ]
 
 

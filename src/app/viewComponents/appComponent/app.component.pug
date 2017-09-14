@@ -33,7 +33,15 @@ div.navigation.col-lg-12
                         | Contacto
 
 
-
+            ul.nav.navbar-nav.navbar-right
+                li
+                    a( [routerLink] ="['/register']" [routerLinkActive]="['active']")
+                        span.glyphicon.glyphicon-user
+                        | Registro
+                li
+                    a( [routerLink] ="['/login']" [routerLinkActive]="['active']")
+                        span.glyphicon.glyphicon-log-in
+                        | Login
 
 div.col-lg-11
     router-outlet

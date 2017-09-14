@@ -9,6 +9,8 @@ import { AnimalsComponent } from '../viewComponents/animals/animals';
 import { ContactComponent } from '../viewComponents/contact/contact';
 import { HomeComponent } from '../viewComponents/home/home';
 import { KeepersComponent } from '../viewComponents/keepers/keepers';
+import { RegisterComponent } from '../viewComponents/register/register';
+import { LoginComponent } from '../viewComponents/login/login';
 
 const appRoutes: Routes  = [
     {
@@ -39,6 +41,14 @@ const appRoutes: Routes  = [
     {
         path:'store',
         component: TiendaComponent,
+    },
+    {
+        path:'register',
+        component: RegisterComponent,
+    },
+    {
+        path:'login',
+        component: LoginComponent,
     },
     {
         path:'**',
