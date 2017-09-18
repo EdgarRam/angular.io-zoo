@@ -20,9 +20,31 @@
     border-bottom: 3px solid transparent;
 }
 
-.navbar-nav a.active,
-.navbar-nav > li:hover a{
+.navbar-nav > li a.active,
+.navbar-nav > li:hover > a{
     transition: 300ms;
     border-bottom: 3px solid orange;
     color: orange !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+.img-edit{
+    width: 100px;
+}
+
+
+.avatar{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.avatar img{
+    width: 35px
 }

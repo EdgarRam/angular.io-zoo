@@ -1,0 +1,66 @@
+include ../../../mixins/views/fields
+
+div.col-lg-6
+    h1 {{title}}
+    
+    div.alert.alert-success( *ngIf="status==='success'" ) Has actualizado tu información correctamente
+    div.alert.alert-danger( *ngIf="status==='error'" ) No has actualizado tus datos
+
+    form(
+        #userEditFrom="ngForm",
+        (ngSubmit)="onSubmit()"
+    )
+        p
+            label Nombre
+            input.form-control(
+                type='text',
+                name="name"
+                #name="ngModel"
+                [(ngModel)]='user.name'
+                placeholder='Nombre'
+                required
+            )
+            span( *ngIf="!name.valid && name.touched" ) El nombre es obligatorio
+
+        p
+            label Apellidos
+            input.form-control(
+                type='text',
+                name="surname"
+                #surname="ngModel"
+                [(ngModel)]='user.surname'
+                placeholder='Apellidos'
+                required
+            )
+            span( *ngIf="!surname.valid && surname.touched" ) Los Apellidos son obligatorios
+
+        p
+            label Email
+            input.form-control(
+                type='text',
+                name="email"
+                #email="ngModel"
+                [(ngModel)]='user.email'
+                placeholder='Email'
+                required
+            )
+            span( *ngIf="!email.valid && email.touched" ) El email es obligatorio
+
+        div.imageForEdit(
+            *ngIf="user.image"
+        )
+            img.img-edit(
+                src="{{ url + 'get-image-file/' + user.image }}"
+            )
+        p
+            label Sube tu avatar
+            input(
+                type="file",
+                placeholder="Subir imagen",
+                (change) = 'fileChangeEvent( $event )'
+            )
+        input.btn.btn-primary(
+            type="submit"
+            value="{{title}}"
+            [disabled]="!userEditFrom.form.valid"
+        )

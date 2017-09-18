@@ -33,7 +33,7 @@ div.navigation.col-lg-12
                         | Contacto
 
 
-            ul.nav.navbar-nav.navbar-right
+            ul.nav.navbar-nav.navbar-right( *ngIf="!identity")
                 li
                     a( [routerLink] ="['/register']" [routerLinkActive]="['active']")
                         span.glyphicon.glyphicon-user
@@ -42,6 +42,27 @@ div.navigation.col-lg-12
                     a( [routerLink] ="['/login']" [routerLinkActive]="['active']")
                         span.glyphicon.glyphicon-log-in
                         | Login
+
+            ul.nav.navbar-nav.navbar-right( *ngIf="identity")
+                li.avatar
+                    img(
+                        src="{{ url + 'get-image-file/' + identity.image }}"
+                    )
+                li.dropdown
+                    a.dropdown-toggle( data-toggle ="dropdown" ) {{identity.name}}
+                    ul.dropdown-menu
+                        li( *ngIf ="identity.role === 'ROLE_ADMIN' ")
+                            a.pointer( [routerLink]="['/admin-panel']")
+                                span.glyphicon.glyphicon-tasks
+                                | Administrador
+                        li
+                            a.pointer( [routerLink]="['/user-edit']")
+                                span.glyphicon.glyphicon-cog
+                                | Mis Datos
+                        li
+                            a.pointer( (click)="logout()" )
+                                span.glyphicon.glyphicon-log-out
+                                | Cerrar sesion
 
 div.col-lg-11
     router-outlet

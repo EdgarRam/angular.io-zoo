@@ -2,7 +2,9 @@
 
 div.col-lg-6
     h1 {{title}}
-
+    
+    div.alert.alert-success( *ngIf="status === 'success'" ) Login Correcto!
+    div.alert.alert-danger( *ngIf="status === 'error'" ) No te has logeado correctamente
 
     form.col-lg-7(
         '#loginForm'="ngForm",

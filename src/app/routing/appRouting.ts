@@ -1,16 +1,18 @@
-import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
 
 
 
 //view Components
-import { TiendaComponent } from '../viewComponents/tienda/tienda';
-import { AnimalsComponent } from '../viewComponents/animals/animals';
-import { ContactComponent } from '../viewComponents/contact/contact';
-import { HomeComponent } from '../viewComponents/home/home';
-import { KeepersComponent } from '../viewComponents/keepers/keepers';
-import { RegisterComponent } from '../viewComponents/register/register';
-import { LoginComponent } from '../viewComponents/login/login';
+import { TiendaComponent } from '../viewComponents/tienda/tienda'
+import { AnimalsComponent } from '../viewComponents/animals/animals'
+import { ContactComponent } from '../viewComponents/contact/contact'
+import { HomeComponent } from '../viewComponents/home/home'
+import { KeepersComponent } from '../viewComponents/keepers/keepers'
+import { RegisterComponent } from '../viewComponents/register/register'
+import { LoginComponent } from '../viewComponents/login/login'
+import { UserEditComponent } from '../viewComponents/user-edit/user-edit'
+
 
 const appRoutes: Routes  = [
     {
@@ -49,6 +51,10 @@ const appRoutes: Routes  = [
     {
         path:'login',
         component: LoginComponent,
+    },
+    {
+        path: 'user-edit',
+        component: UserEditComponent
     },
     {
         path:'**',
